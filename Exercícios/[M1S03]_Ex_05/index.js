@@ -1,4 +1,4 @@
-
+// Substitua as repetições do exercício anterior por uma função.
 
 function criarDivsComTextos (lista = []) {
     const divTexto = document.getElementById('textos')
