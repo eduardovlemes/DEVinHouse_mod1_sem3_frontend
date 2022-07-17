@@ -112,3 +112,11 @@ console.log(calcular2(1, 2)[0]) // 3
 console.log(calcular2(1, 2)[1]) // -1
 console.log(calcular2(1, 2)[2]) // 0.5
 console.log(calcular2(1, 2)[3]) // 2
+
+
+
+
+
+
+
+
