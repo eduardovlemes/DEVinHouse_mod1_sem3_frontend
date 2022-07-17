@@ -1,3 +1,5 @@
+// Crie um site (arquivo HTML) que, ao ser renderizado, adicione (arquivo JS) 5 textos quaisquer, um ao lado outro, com a cor azul (arquivo css).
+
 const divTextos = document.getElementById("textos");
 
 const texto1 = document.createElement("div");
