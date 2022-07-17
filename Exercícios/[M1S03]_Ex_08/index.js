@@ -8,13 +8,24 @@
 //  - um botão “mostrar mensagem”, que após o recarregamento da página, no momento do clique busque a mensagem no localStorage e exiba na tela
 //Opcional: se não houver mensagem cadastrada no localStorage, deve mostrará na tela: “não há ítens salvos”.
 
-function adicionar(){
-    const input = document.getElementById('meu-input')
-    const divPai = document.getElementById('divPai')
-    divPai.innerHTML=(input.value)
+// Function para imprimir mensagem
+function adicionar () {
+    const input = document.getElementById("meu-input");
+    const divPai = document.getElementById("pai");
+    divPai.innerHTML = (input.value);
 }
 
-function salvar(){
-    document.getElementById()
-}
+// Botao para salvar msg
+const botao2 = document.getElementById("botao-salvar"); 
+botao2.addEventListener("click", function() {
+    const input = document.getElementById("meu-input");
+    localStorage.setItem("mensagem", JSON.stringify(input.value))
+  })
 
+// Botao mostrar msg
+function mostrar () {
+    const input = document.getElementById("meu-input");
+    const divPai = document.getElementById("pai");
+    const texto = localStorage.getItem("mensagem");
+    divPai.innerHTML = JSON.parse(texto);
+}
